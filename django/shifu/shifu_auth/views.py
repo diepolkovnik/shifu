@@ -27,10 +27,4 @@ def register(request):
     return render(request, 'registration/register.html', context)
 
 def sendmail(request):
-     send_mail(
-        'subject',
-        'message',
-        'localhost',
-        ['localhost'],
-        fail_silently=False
-    )
+     send_mail('subject','message','localhost',['localhost'],fail_silently=False)

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'shifu.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['./templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,5 +130,5 @@ LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "send_email")
 
-EMAIL_HOST = 'localhost'
+EMAIL_HOST = '127.0.0.1'
 EMAIL_PORT = 1025
